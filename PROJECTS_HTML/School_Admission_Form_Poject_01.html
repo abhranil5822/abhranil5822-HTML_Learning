@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+  </head>
+
+  <body>
+    <header class="Main Header">
+      <div class="School Info Container">
+        <h1>ABC School</h1>
+        <img
+          src="hello_world_2022-building-8991569_640.jpg"
+          height="300"
+          width="375"
+        />
+        <br />
+        <h3>Admission OPEN!!</h3>
+        <nav class="Links Container" cellpadding="16px">
+          <a href="ABC_School.in">ABC School.in</a><br />
+          <a href="I_Admission.in">Class I Admission</a><br />
+          <a href="V_Admission.in">Class V Admission</a><br />
+          <a href="https://super-space-guacamole-gxq4qqv574xp3w99-5500.app.github.dev/PROJECTS_HTML/School_Admission_Form_Poject_01.html?Gender=on&Stream_Comb=on" target="_blank">Class XI Admission</a><br />
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <fieldset>
+        <legend><h3>Class XI Admission Form</h3></legend>
+
+        <form action="" method="get">
+          <label for="Name">Full Name : </label>
+          <input
+            type="text"
+            id="Name"
+            placeholder="Abhranil Chakraborty"
+            required
+            /><br /><br />
+            
+            <label for="DOB">DOB : </label>
+            <input type="date" id="DOB" required/><br /><br />
+
+          <h4>Gender :</h4>
+          <label for="Male">Male : </label>
+          <input type="radio" id="Male" name="Gender" required />
+          <label for="female">&nbsp;female : </label>
+          <input type="radio" id="female" name="Gender" required /><br /><br /><br />
+
+          <label for="Nationality">Nationality : </label>
+          <input
+            type="text"
+            id="Nationality"
+            value="India"
+            disabled
+          /><br /><br />
+
+          <label for="BG">Bloodgroup : </label>
+          <input type="text" id="BG" pattern="^(A|B|AB|O)[\+\-]$" required /><br /><br />
+
+          <label for="Aadhaar No.">Aadhaar No. : </label>
+          <input type="text" id="Aadhaar No." required /><br /><br />
+
+          <label for="Catagory">Catagory : </label>
+          <input type="text" id="Catagory" required /><br /><br />
+
+          <label for="FName">Father Name : </label>
+          <input
+            type="text"
+            id="FName"
+            placeholder="Dhrubajyoti Chakraborty"
+            required
+          /><br /><br />
+
+          <label for="FOccupation">Father's Occupation : </label>
+          <input type="text" id="FOccupation" required /><br /><br />
+
+          <label for="MName">Mothers Name : </label>
+          <input
+            type="text"
+            id="MName"
+            placeholder="Pampa Chakrabarty"
+          /><br /><br />
+
+          <label for="MOccupation">Mother's Occupation : </label>
+          <input type="text" id="MOccupation" /><br /><br />
+
+          <label for="AIncome">Annual Family Income : </label>
+          <input type="text" id="AIncome" required /><br /><br />
+
+          <label for="SCDetails">Student Contact Details : </label>
+          <input type="text" id="SCDetails" /><br /><br />
+
+          <label for="ECDetails">Emergency Contact Details : </label>
+          <input type="text" id="ECDetails" required /><br /><br />
+
+          <label for="PSName">Previous School Name : </label>
+          <input type="text" id="PSName" required /><br /><br />
+
+          <label for="PSBoard">Previous School Board : </label>
+          <input type="text" id="PSBoard" /><br /><br />
+
+          <label for="TCNumber">Transfer/Migration Certificate Number : </label>
+          <input type="text" id="TCNumber" required /><br /><br />
+
+          <label for="Address">Address : </label>
+          <input
+            type="text"
+            id="Address"
+            placeholder="Gupta Colony, Barasat"
+            required
+          /><br /><br />
+
+          <label for="Marks">Obtained Marks in MP : </label>
+          <input
+            type="number"
+            id="Marks"
+            min="200"
+            max="700"
+            required
+          /><br /><br /><br /><br /><br /><br />
+
+          <p>Choose a subject combinaion :</p>
+
+          <table border cellpadding="16px " height="500px" width="500px" aria-required="true">
+            <thead>
+              <tr>
+                <th colspan="4">Subject Combinations available</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th>Streams</th>
+                <td>Science</td>
+                <td>Commerce</td>
+                <td>Arts</td>
+              </tr>
+
+              <tr>
+                <th rowspan="3">
+                  Subject <br />
+                  Combinations
+                </th>
+                <td>
+                  PHYS <br />
+                  CHEM <br />
+                  MATH <br />
+                  BIOS <br />
+                  <label for="Stream_Comb">Select : </label>
+                  <input type="radio" name="Stream_Comb" id="PCMB" required />
+                </td>
+                <td>
+                  ACCO <br />
+                  BUSI <br />
+                  ECON <br />
+                  MATH <br />
+                  <label for="Stream_Comb">Select : </label>
+                  <input type="radio" name="Stream_Comb" id="ABEM" />
+                </td>
+                <td>
+                  HIST <br />
+                  POLS <br />
+                  ECON <br />
+                  MATH <br />
+                  <label for="Stream_Comb">Select : </label>
+                  <input type="radio" name="Stream_Comb" id="HPEM" />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  PHYS <br />
+                  CHEM <br />
+                  MATH <br />
+                  COMS <br />
+                  <label for="Stream_Comb">Select : </label>
+                  <input type="radio" name="Stream_Comb" id="PCMCs" />
+                </td>
+                <td>
+                  ACCO <br />
+                  BUSI <br />
+                  ECON <br />
+                  INFP <br />
+                  <label for="Stream_Comb">Select : </label>
+                  <input type="radio" name="Stream_Comb" id="ABEI" />
+                </td>
+                <td>
+                  GEOG <br />
+                  POLS <br />
+                  PSYC <br />
+                  SOCI <br />
+                  <label for="Stream_Comb">Select : </label>
+                  <input type="radio" name="Stream_Comb" id="GPPS" />
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  PHYS <br />
+                  CHEM <br />
+                  BIOS <br />
+                  COMS <br />
+                  <label for="Stream_Comb">Select : </label>
+                  <input type="radio" name="Stream_Comb" id="PCBC" />
+                </td>
+                <td>
+                  ACCO <br />
+                  BUSI <br />
+                  ECON <br />
+                  PHED <br />
+                  <label for="Stream_Comb">Select : </label>
+                  <input type="radio" name="Stream_Comb" id="ABEP" />
+                </td>
+                <td>
+                  HIST <br />
+                  POLS <br />
+                  LEGA <br />
+                  ENGL <br />
+                  <label for="Stream_Comb">Select : </label>
+                  <input type="radio" name="Stream_Comb" id="HPLE" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <br /><br /><br />
+          
+          <h4>Choose Additional Services (Optional) :</h4>
+          <label for="Transport">School Bus : </label>
+          <input type="checkbox" id="Transport" /><br /><br />
+
+          <label for="Hostel">Hostel : </label>
+          <input type="checkbox" id="Hostel" /><br /><br />
+          <input type="submit" value="Submit Form"  /><br />
+        </form>
+      </fieldset>
+    </main>
+  </body>
+</html>
